@@ -34,7 +34,7 @@ lat_A1.universes[pos_x_64, pos_y_64] = pt # 毒物棒
 - React + TypeScript
 - Vite
 - Tailwind CSS + shadcn/ui
-启动程序：`npm run dev`
+- 启动程序：`npm run dev`
 ---
 
 ## <a name="english"></a>English
@@ -64,4 +64,4 @@ lat_A1.universes[pos_x_64, pos_y_64] = pt # Poison Tube
 - React + TypeScript
 - Vite
 - Tailwind CSS + shadcn/ui
-start the webpage：`npm run dev`
+- Start the webpage：`npm run dev`
