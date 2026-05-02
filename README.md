@@ -1,6 +1,6 @@
 # Lattice - Fuel Assembly Builder Tool
 
-<p align="center">
+<p align="left">
   <a href="#中文">
     <img src="https://img.shields.io/badge/语言-中文-blue?style=for-the-badge" alt="Chinese">
   </a>
