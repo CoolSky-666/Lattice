@@ -1,0 +1,97 @@
+/* Custom styles for Fuel Assembly Builder */
+
+/* Grid cell hover effects */
+.grid > div {
+  position: relative;
+}
+
+.grid > div::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+}
+
+.grid > div:hover::before {
+  opacity: 1;
+}
+
+/* Tube ring styling */
+.border-3 {
+  border-width: 3px;
+}
+
+/* Smooth transitions for all interactive elements */
+button, input, .grid > div {
+  transition: all 0.15s ease;
+}
+
+/* Custom scrollbar for export area */
+pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.8);
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}
+
+/* Animation for mode changes */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.mode-active {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Stats card hover effect */
+.stats-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid container responsive */
+@media (max-width: 768px) {
+  .grid {
+    gap: 0.25rem !important;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
